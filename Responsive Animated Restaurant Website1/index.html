@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header" id="header">
+   <a href ="#" class="logo"> Foodie </a>
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+         <a href="#menu">Menu</a>
+        <a href="#contact">Contact </a>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars open"></i>
+        <i class="fa-solid fa-xmark close"></i>
+    </div>
+</header>
+
+
+  <section class="hero">
+    <div class="hero-content">
+        <h2 class="hero-subtitle">WELLCOME TO FOODIE</h2>
+      <!-- <h1 class="hero-title">Delicious Food, Delivered Fresh</h1> -->
+       <!-- <h1 class="hero-title">Fresh & Tasty Meals Everyday</h1> -->
+        <h1 class="hero-title">Experience The Taste Of Luxury</h1>
+    
+      <div class="buttons">
+        <a href="#contact" class="btn btn-primary">Order Now</a>
+        <a href="#menu" class="btn btn-secondary">View Menu</a>
+      </div>
+    </div>
+  </section>
+<!-- ABOUT SECTION -->
+ <section class="about-section" id="about">
+    <h2 class="section-title">About <span>Us</span> </h2>
+  <div class="about-container">
+    <div class="about-image">
+      <img src="assets/A restaurant interior image with an inviting, thoughtfully designed dining space, tables and chairs, warm ambient lighting, elegant decor, and a polished hospitality atmosphere (1).jpg" alt="Restaurant Interior"/>
+      <div class="experience-badge">
+        <h3 class="badge-number">15+</h3>
+        <p class="badge-text">Years of Excellence</p>
+      </div>
+    </div>
+    <div class="about-content">
+      <h3 class="sub-heading">Our Story</h3>
+      <h2 class="heading">Crafting Culinary Memories Since 2011</h2>
+      <p class="description">
+        Born from a passion for authentic flavors and local ingredients,
+         our kitchen brings together traditional recipes and modern techniques.
+          Every dish is crafted to tell a story of heritage, community, and fine dining.
+      </p>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">
+               <i class="fa-solid fa-seedling"></i>
+          </div>
+          <div>
+            <h4>Farm-Fresh Ingredients</h4>
+            <p>Sourced daily from local organic farmers.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+              <i class="fa-solid fa-utensils"></i>
+          </div>
+          <div>
+            <h4>Master Chefs</h4>
+            <p>Led by award-winning culinary talent.</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-button">
+     <a href="#reservation" class="cta-button">Reserve a Table</a>
+      </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Services Section -->
+<section class="services" id="services">
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="services-container">
+
+  <div class="service-box">
+    <i class="fa-solid fa-utensils"></i>
+    <h3>Quality Food</h3>
+    <p>
+      We prepare delicious meals using fresh ingredients and authentic
+      recipes to give you the best dining experience.
+    </p>
+  </div>
+
+  <div class="service-box">
+    <i class="fa-solid fa-truck"></i>
+    <h3>Fast Delivery</h3>
+    <p>
+      Enjoy your favorite dishes at home with our quick and reliable
+      delivery service.
+    </p>
+  </div>
+
+  <div class="service-box">
+    <i class="fa-solid fa-champagne-glasses"></i>
+    <h3>Event Catering</h3>
+    <p>
+      We provide catering services for weddings, birthdays,
+      and corporate events with premium food quality.
+    </p>
+  </div>
+
+
+</div>
+
+</section>
+
+
+<section class="menu" id="menu">
+
+  <h2 class="section-title">
+    Our Menu
+  </h2>
+  <div class="filter-buttons">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="apptizers">Appetizers</button>
+    <button data-filter="desserts">Desserts</button>
+    <button data-filter="drink">Drink</button>
+  </div>
+
+  <div class="item">
+     <div class="card apptizers">
+      <div class="card-image">
+        <img src="assets/appetizers1.jpg" width="300">
+      </div>
+        <div class="card-content">
+        <h2 class="card-title">
+          Bruschetta
+        </h2>
+        <p class="card-description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.?
+        </p>
+           <div class="price-order">
+          <div class="price"><span>$</span>22.54</div>
+          <button class="btn order-btn" onclick="placeOrder()">
+            Order now
+          </button>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="card desserts">
+      <div class="card-image">
+        <img src="assets/desserts1.jpg" width="300">
+      </div>
+        <div class="card-content">
+         <h2 class="card-title">
+         Tiramisu
+         </h2>
+        <p class="card-description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+       
+        <div class="price-order">
+          <div class="price"><small>$</small>22.54</div>
+          <button class="order-btn">
+            Order Now
+          </button>
+        </div>
+       </div>
+    </div>
+
+    <div class="card drink">
+      <div class="card-image">
+        <img src="assets/drink1.jpg" width="300">
+      </div>
+      <div class="card-content">
+        <h2 class="card-title">
+          Soft Drink
+        </h2>
+        <p class="card-description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div class="price-order">
+          <div class="price"><small>$</small>22.54</div>
+          <button class="order-btn">
+            Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+     <div class="card apptizers">
+      <div class="card-image">
+        <img src="assets/appetizers2.jpg" width="300">
+      </div>
+        <div class="card-content">
+        <h2 class="card-title">
+         Appetizers
+        </h2>
+        <p class="card-description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+           <div class="price-order">
+          <div class="price"><small>$</small>22.54</div>
+          <button class="order-btn">
+            Order Now
+          </button>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="card desserts">
+      <div class="card-image">
+        <img src="assets/desserts2.jpg" width="300">
+      </div>
+        <div class="card-content">
+         <h2 class="card-title">
+         Tiramisu2
+         </h2>
+        <p class="card-description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div class="price-order">
+          <div class="price"><small>$</small>22.54</div>
+          <button class="order-btn">
+            Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card drink">
+      <div class="card-image">
+        <img src="assets/drink2.jpg" width="300">
+      </div>
+      <div class="card-content">
+        <h2 class="card-title">
+          Soft Drink
+        </h2>
+        <p class="card-description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div class="price-order">
+          <div class="price"><small>$</small>22.54</div>
+          <button class="order-btn">
+            Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+     <div class="card apptizers">
+      <div class="card-image">
+        <img src="assets/appetizers3.jpg" width="300">
+      </div>
+        <div class="card-content">
+        <h2 class="card-title">
+          Bruschetta
+        </h2>
+        <p class="card-description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+           <div class="price-order">
+          <div class="price"><small>$</small>22.54</div>
+          <button class="order-btn">
+            Order Now
+          </button>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="card desserts">
+      <div class="card-image">
+        <img src="asets/desserts3.jpg" width="300">
+      </div>
+        <div class="card-content">
+         <h2 class="card-title">
+         Tiramisu
+         </h2>
+        <p class="card-description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div class="price-order">
+          <div class="price"><small>$</small>22.54</div>
+          <button class="order-btn">
+            Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card drink">
+      <div class="card-image">
+        <img src="assets/drink3.jpg" width="300">
+      </div>
+      <div class="card-content">
+        <h2 class="card-title">
+          Soft Drink
+        </h2>
+        <p class="card-description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        </p>
+        <div class="price-order">
+          <div class="price"><small>$</small>22.54</div>
+          <button class="order-btn">
+            Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+   </div>
+</section>
+   <!-- Contact Section -->
+    <section id="contact" class="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Culinary Street, Food City, FC 12345</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@flavorhaven.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Mon-Sun: 11:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Flavor Haven</h3>
+                    <p>Creating memorable dining experiences since 2010.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-yelp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Flavor Haven. All rights reserved.</p>
+            </div>
+        </div>
+      </footer>
+<!-- back to to button -->
+<button id="backToTop">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+<!-- ScrollReveal CDN -->
+  <script src="https://unpkg.com/scrollreveal"></script>  
+
+<script src="script.js"></script>  
+</body>
+</html>
